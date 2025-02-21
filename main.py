@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 data = pd.read_csv("tested.csv")
-
 # Data Cleaning
 def preprocess_data(df):
     df.drop(columns=["PassengerId", "Name", "Ticket", "Cabin"], inplace=True)
